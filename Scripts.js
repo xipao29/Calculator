@@ -50,13 +50,24 @@ const Clear = document.getElementById("Clear_Button");
 const Numbers = document.getElementById("Numbers");
 
 Digit_0.addEventListener('click', () => {
-    if (Cont == 0){                                 // If it's the first number you're typing,
-        Num_1 = Num_1 * 0;                          // multiply the first number by zero and show the result.
-        Cont += 1;
+    if (Cont != 0 && Turn == 0){                    // If it's not the first number you're typing and it's the 
+        Num_1 = (Num_1*10);                         // first number sequence you're typing, multiply the first number by ten
+        Cont += 1;                                  // and show the result.
         console.log(Num_1);
         Numbers.innerHTML = Num_1;
-    } else {                                        // If it's not the first number you're typing,
-        Num_1 = Num_1 * 10;                         // multiply the first number by ten, sum the number you've typed
+    } else if (Cont != 0 && Turn == 1){             // If it's not the first number you're typing and it's the
+        Num_2 = (Num_2*10);                         // second number sequence you're typing, multiply the first number by ten
+        Cont += 1;                                  // and show the result.
+        console.log(Num_2);
+        Numbers.innerHTML = Num_2;
+    };
+    if (Cont == 0 && Turn == 0){                    // If it's the first number you're typing and it's the
+        Num_1 += 0;                                 // first number sequence you're typing, sum the number you've typed
+        Cont += 1;                                  // and show the result.
+        console.log(Num_1);
+        Numbers.innerHTML = Num_1;
+    } else if (Cont == 0 && Turn == 1){             // If it's the first number you're typing and it's the
+        Num_1 = (Num_1*10);                         // second number sequence you're typing, multiply the first number by ten 
         Cont += 1;                                  // and show the result.
         console.log(Num_1);
         Numbers.innerHTML = Num_1;
