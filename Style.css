@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #1f1f1f;
+}
+
+#Centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#Buttons_Background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 750px;
+    background-color: #2e2e2e;
+    gap: 20px;
+}
+
+#Buttons {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    column-gap: 50px;
+    row-gap: 25px;
+}
+
+#Table {
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: aliceblue;
+    background-color: #3b3b3b;
+    width: 550px;
+    height: 85px;
+}
+
+#Numbers {
+    font-size: 45px;
+    font-family: sans-serif;
+    padding: 5px;
+    color: aliceblue;
+}
+
+.Button {
+    width: 100px;
+    height: 100px;
+    background-color: #3b3b3b;
+    border: none;
+    font-size: 30px;
+    font-family: sans-serif ;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+#Zero_Button {
+    width: 550px;
+}
